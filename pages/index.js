@@ -3,8 +3,12 @@ import Navbar from '../components/navbar';
 import Inf from '../components/inf'
 import Carousel from '../components/carousel';
 import About from '../components/about';
+
 import Footer from '../components/footer';
 import HomeStyle from "../styles/Home.module.css"
+
+import Worked from '../components/worked';
+
 export default function Home() {
   return (
     
@@ -18,9 +22,12 @@ export default function Home() {
 
      
       <Inf/>
+
       <About/>
       {/* <Footer/> */}
         </main>
+      <About></About>
+      <Worked/>
 
     </>
   );

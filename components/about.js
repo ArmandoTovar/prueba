@@ -42,10 +42,11 @@ export default function About() {
           alt="logo"
         />
         </div>
-
      
      
       </div>
  
   );
 }
+
+
