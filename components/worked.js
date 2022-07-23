@@ -20,7 +20,8 @@ export default function Worked() {
           <div className={Style.bar}>
             {Prof.map((empresa, index) => {
               return (
-                <>
+                <label className={Style.business} key={"lab" + index} htmlFor={"e" + index}>
+                {empresa.name}
                   <input
                     key={"input" + index}
                     id={"e" + index}
@@ -30,10 +31,9 @@ export default function Worked() {
                     checked={work == index}
                     onChange={() => setWork(index)}
                   />
-                <label className={Style.business} key={"lab" + index} htmlFor={"e" + index}>
-                    {empresa.name}
+            
                   </label>
-                </>
+                
               );
             })}
           </div>

@@ -11,6 +11,8 @@ display:flex;
   width:90%;
   justify-content:space-between;
   margin:0 auto;
+
+
 }
 
 .nav_input, .nav_label{
@@ -87,4 +89,18 @@ display:flex;
 
 }
  
+}
+.svg > g > g >path{
+ fill:red;
+
+ 
+ 
+}
+.svg {
+ position: relative;
+
+}
+.svgpadre{
+  width: 100px;
+  
 }
