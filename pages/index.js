@@ -46,6 +46,7 @@ export default function Home(props) {
       
 
       <About/>
+
       <Worked></Worked>
       
    <style jsx global>
@@ -58,6 +59,11 @@ export default function Home(props) {
       </style> 
       {/* <Built/>
       <Proyects/> */}
+
+      <Worked/>
+      <Built/>
+      <Proyects/>
+
         </main>
        
     </>

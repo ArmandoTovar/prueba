@@ -36,10 +36,15 @@
 }
 
 .bar {
-  padding: 0px;
-  margin: 0px;
-  border: none;
-  grid-area: employ;
+
+    padding: 0px;
+    margin: 0px;
+    border: none;
+    grid-area: employ;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    height: 200px;
+
 }
 
 .employ {
@@ -71,14 +76,14 @@
 .bar>input[type="radio"]:checked+label::before {
   content: "";
   transition: 0.5s;
-  font-weight: 100;
-  border-left: 5px solid #64FFDA;
-  border-bottom: 5px solid #64FFDA;
-  border-top: 5px solid #64FFDA;
-  margin: 0px;
-  padding: 0px;
-  position: relative;
-  left: -3px;
+  font-weight: 100;   
+    border-left: 5px solid #64FFDA;
+    border-bottom: 5px solid #64FFDA;
+    border-top: 5px solid #64FFDA;
+    margin: 0px;
+    padding:0px;
+    position: relative;
+    left: -3px;
 }
 
 .employ>p::before {
@@ -101,9 +106,59 @@
 }
 
 .title {
+
   display: flex;
   align-items: center;
   width: 100%;
+
+
+ 
+}
+.business{
+    font-size: 2em;
+}
+  .separator {
+    width: 30%;
+    height: 1px;
+    border: solid 1px #64ffda;
+    margin-left: 20px;
+    margin-bottom: 0px;
+   
+  }
+  .section{
+  display: block;
+  width: 250px;
+  
+  }
+  @media (max-width:767px) {
+    .worked{
+        display: grid;
+        grid-template-columns: 1fr ;
+        grid-template-rows: 1fr;
+        grid-template-areas: 
+        "employ "
+        "bar";
+        margin: 20px;
+        align-items: flex-end;
+      }
+      
+ 
+    .bar {
+        padding: 0px;
+        margin: 0px;
+        border: none;
+        height: 200px;
+        overflow: scroll;
+        overflow-x: hidden;
+    } 
+ 
+    .employ{
+        max-width: 400px;
+      
+  }
+  .job{
+    width: 250px;
+    font-size: 20px;
 
 }
 
@@ -161,4 +216,4 @@
     font-size: 20px;
   }
 
-}
+}}
