@@ -34,49 +34,27 @@ export default function Home(props) {
       }}>Theme</button>
       <Navbar />
       <main  >
-
-      <Inf/>
-
-
-        <Inf  thema={theme}/>
-
-
-        <About thema={theme} />
-
-        <Worked thema={theme}/>
-
-        <style jsx global>
-          {`
-  body {
-    background:${theme != undefined ? theme.backgroundColor.primary : 'white'};
-    font-family:${theme != undefined ? theme.font : 'Arial'};
-  }
-  button{
-    background-color: rgba(0,0,0,0);
-    border-color:${theme != undefined ? theme.textColor.primary : 'white'};
-    color: ${theme != undefined ? theme.textColor.primary : 'white'};
-  
-  }
-  button:hover{
-    color: ${theme != undefined ? theme.backgroundColor.hover : '#0f5e4b'};
-    border-color:${theme != undefined ? theme.backgroundColor.hover : '#0f5e4b'};
-  }
-  ::-webkit-scrollbar-thumb {
-    background: ${theme != undefined ? theme.textColor.primary : 'white'}; 
-  
-  }
-  ::-webkit-scrollbar-thumb:hover {
-    background: ${theme != undefined ? theme.textColor.primary : 'white'}; 
-  }
-
-`}
-        </style>
-
-        <Built thema={theme} />
-        <Proyects thema={theme} />
+        <Inf />
+        <About />
+        <Worked />
+        <Built />
+        <Proyects />
 
       </main>
-
+      <style jsx global>
+          {`
+:root{
+  --background:${theme != undefined ? theme.backgroundColor.primary : 'white'};
+  --primary_text:${theme != undefined ? theme.textColor.primary : 'white'};
+  --secondary_text:${theme != undefined ? theme.textColor.secundary : 'white'};
+  --other_text:${theme != undefined ? theme.textColor.other : 'white'};
+  --backgroun-card:${theme != undefined ? theme.backgroundColor.secundary : 'white'};
+  --font:${theme != undefined ? theme.font : 'Arial'};
+  --secondary_font:${theme != undefined ? theme.font : 'Inter'};
+  --bacground-card-secondary:${theme != undefined ? theme.backgroundColor.hover : 'white'};
+  }
+`}
+        </style>
     </>
   )
 }

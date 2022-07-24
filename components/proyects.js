@@ -131,20 +131,6 @@ export default function Proyects () {
 
           )}
       :
-      <style jsx>{`
-                  h6,h5{
-                    color:${thema != undefined ? thema.textColor != undefined ? thema.textColor.other : "#fff" : "#fff"};  
-                  }
-                  div > div:nth-child(1),a , span , p{
-                      color: ${thema != undefined ? thema.textColor != undefined ? thema.textColor.primary : "#64FFDA" : "#64FFDA"};
-                  }
-
-                  #card{
-                    background-color: ${thema != undefined ? thema.backgroundColor != undefined ? thema.backgroundColor.hover : '#0f5e4b' : '#0f5e4b'};
-                   box-shadow-color: color:${thema != undefined ? thema.textColor != undefined ? thema.textColor.other : "#fff" : "#fff"}; 
-                    }
-                  `}
-              </style>
     </>
   )
 }

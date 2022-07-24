@@ -16,7 +16,7 @@
                 {
                     "primary":"#020C1B",
                     "secundary":"#233554",
-                    "hover":"rgba(100, 255, 218, 0.2)"
+                    "hover":"#112240"
                 },
                 "font":"Poppins"
             
@@ -36,7 +36,7 @@
                             {
                                 "primary":"#ffffff",
                                 "secundary":"#fcfcfc",
-                                "hover":"rgba(0, 0, 0, 0.2)"
+                                "hover":"#fcfcfc"
                             },
                             "font":"Poppins"
                         

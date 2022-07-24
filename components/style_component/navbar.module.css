@@ -57,6 +57,9 @@ padding: 0 20px;
     --clippy:polygon(0 0, 100% 0, 100% 100%,0% 100%);
     color: var(--primary_text);
 }
+.logo > svg > g > path , .logo > svg > g > g> path{
+  fill: var(--primary_text);
+}
 
 @media (max-width:600px ){
   .nav_container{

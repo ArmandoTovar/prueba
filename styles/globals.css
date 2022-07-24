@@ -1,13 +1,4 @@
-:root{
---background:#020C1B;
---primary_text:#64FFDA;
---secondary_text:#A8B2D1;
---other_text:#fff;
---backgroun-card:#233554;
---font:'Poppins';
---secondary_font:'Inter';
---bacground-card-secondary:#112240;
-}
+
 
 ::-webkit-scrollbar {
   width:5px;
