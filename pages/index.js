@@ -10,6 +10,7 @@ import React, { useState, useEffect } from 'react';
 import { useTheme } from '../hooks/theme';
 import * as themes from '../pages/api/varTheme.json';
 import { setToLS } from '../utils/storage';
+import Contact from '../components/contact'
 
 export default function Home(props) {
   setToLS('all-themes', themes.default);
@@ -36,6 +37,7 @@ export default function Home(props) {
         <Worked />
         <Built />
         <Proyects />
+        <Contact/>
 
       </main>
       <style jsx global>
