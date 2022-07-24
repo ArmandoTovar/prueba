@@ -19,3 +19,16 @@ align-self:baseline;
   font-weight: 400;
    padding: .5rem; 
 }
+.social{
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  left: 10px;
+  ;
+  width: auto;
+
+}
+.social > a {
+  color: var(--secundary_text);
+  font-size: 1.5em;
+}
