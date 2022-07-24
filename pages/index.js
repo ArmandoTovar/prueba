@@ -5,6 +5,7 @@ import About from '../components/about'
 import Worked from '../components/worked'
 import Built from '../components/built'
 import Proyects from '../components/proyects'
+import Footer from '../components/footer'
 
 import React, { useState, useEffect } from 'react';
 import { useTheme } from '../hooks/theme';
@@ -38,6 +39,7 @@ export default function Home(props) {
         <Built />
         <Proyects />
         <Contact/>
+        <Footer/>
 
       </main>
       <style jsx global>
