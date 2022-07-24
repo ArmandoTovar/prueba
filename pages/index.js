@@ -1,12 +1,10 @@
-import Head from "next/head";
-import Navbar from "../components/navbar";
-import Inf from "../components/inf";
-import Carousel from "../components/carousel";
-import About from "../components/about";
-import Worked from "../components/worked";
-import HomeStyle from "../styles/Home.module.css";
-import Built from "../components/built";
-import Proyects from "../components/proyects";
+import Head from 'next/head'
+import Navbar from '../components/navbar'
+import Inf from '../components/inf'
+import About from '../components/about'
+import Worked from '../components/worked'
+import Built from '../components/built'
+import Proyects from '../components/proyects'
 
 import React, { useState, useEffect } from 'react';
 import globalStyles from '../hooks/global.js';
@@ -26,21 +24,18 @@ export default function Home(props) {
 
   }, [theme]);
 
-
   return (
     <>
       <Head>
         <title>At design</title>
       </Head>
       <button onClick={() => {
-
-
-
         selectedTheme.id == 'T_002' ? setMode('dark') : setMode('light')
       }}>Theme</button>
+      <Navbar />
+      <main  >
 
-      <Navbar thema={theme} />
-      <main className={HomeStyle.main} >
+      <Inf/>
 
 
         <Inf  thema={theme}/>
@@ -83,5 +78,5 @@ export default function Home(props) {
       </main>
 
     </>
-  );
+  )
 }
