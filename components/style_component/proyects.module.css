@@ -20,7 +20,7 @@
 }
 
 .proy {
-    background: var(--bacground-card-secondaryy);
+    background: var(--bacground-card-secondary);
     padding: 1rem;
     max-width: 400px;
 }
