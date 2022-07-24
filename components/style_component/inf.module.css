@@ -19,3 +19,8 @@ align-self:baseline;
   font-weight: 400;
    padding: .5rem; 
 }
+.social{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
