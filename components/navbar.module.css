@@ -1,6 +1,6 @@
 
 .nav{
-  background:#020C1B;
+
   height: 80px;
   color:#fff;
 
@@ -91,7 +91,7 @@ display:flex;
  
 }
 .svg > g > g >path{
- fill:red;
+ fill:#64FFDA;
 
  
  

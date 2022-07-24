@@ -7,7 +7,7 @@ export default function Navbar({ thema }) {
 
   return (
     <>
-      <div className={Style.nav}>
+      <div className={Style.nav} id="nav">
         <nav className={Style.nav_container}>
 
           <div className={Style.svgpadre}>
@@ -54,18 +54,36 @@ export default function Navbar({ thema }) {
             <li>
               {" "}
               <button className={Style.button}>Resume</button>
-              <style jsx>{`
-            button {
-            color: ${thema != undefined ?
-              thema.textColor != undefined ?
-              thema.textColor.primary : "black" : "black"};
-          
-                }`}
-              </style>
+              
             </li>
           </ul>
         </nav>
       </div>
+      <style jsx>{`
+                  #nav{
+                    color:${thema != undefined ? thema.textColor != undefined ? thema.textColor.other : "#fff" : "#fff"};  
+                  }
+                  a{
+                    color:${thema != undefined ? thema.textColor != undefined ? thema.textColor.other : "#fff" : "#fff"};
+                  }
+                  a::after{
+                    background:${thema != undefined ? thema.textColor != undefined ? thema.textColor.other : "#fff" : "#fff"};
+                  }
+
+                  a:hover{
+                      color: ${thema != undefined ? thema.textColor != undefined ? thema.textColor.primary : "#64FFDA" : "#64FFDA"};
+                  }
+                    label{
+                      fill:${thema != undefined ? thema.textColor != undefined ? thema.textColor.primary : "#64FFDA" : "#64FFDA"};
+                    }
+                    ul{
+                    background:${thema != undefined ? thema.textColor != undefined ? thema.backgroundColor.primary : "#020C1B" : "#020C1B"};
+                    }
+                    svg > g > g >path{
+                  fill:${thema != undefined ? thema.textColor != undefined ? thema.textColor.primary : "#64FFDA" : "#64FFDA"};
+                  
+`}
+              </style>
     </>
   );
 }

@@ -9,14 +9,16 @@
                 {
                     "primary":"#64FFDA",
                     "secundary":"#D9D9D9",
+                    "other":"#fff",
                     "parag":"#A8B2D1"
                 },
                 "backgroundColor":
                 {
                     "primary":"#020C1B",
-                    "secundary":"#ffffff"
+                    "secundary":"#233554",
+                    "hover":"rgba(100, 255, 218, 0.2)"
                 },
-                "font":"Courier New"
+                "font":"Poppins"
             
                 }, 
         "light":{
@@ -25,16 +27,18 @@
                         "name": "Theme light",
                             "textColor":
                             {
-                                "primary":"#ffffff",
-                                "secundary":"#D9D9D9",
-                                "parag":"#A8B2D1"
+                                "primary":"#000000",
+                                "secundary":"#808080",
+                                "other":"#000",
+                                "parag":"#C0C0C0"
                             },
                             "backgroundColor":
                             {
                                 "primary":"#ffffff",
-                                "secundary":"#ffffff"
+                                "secundary":"#fcfcfc",
+                                "hover":"rgba(0, 0, 0, 0.2)"
                             },
-                            "font":"Times New Roman"
+                            "font":"Poppins"
                         
                             }
         }

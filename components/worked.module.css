@@ -67,7 +67,7 @@
 .bar>input[type="radio"]:checked+label {
   display: block;
 
-
+ 
   height: 1;
   transition: .5s;
   background: rgba(100, 255, 218, 0.2);
@@ -195,6 +195,7 @@
 
   .separator {
     display: none;
+    
   }
 
   .bar {

@@ -4,7 +4,7 @@ import Style from "./built.module.css";
 import { useState } from "react";
 import { FaGithubSquare, FaExternalLinkAlt } from "react-icons/fa";
 
-export default function Built() {
+export default function Built({ thema }) {
   const Jobs = [
     {
       image: "/images/1.jpeg",
@@ -35,7 +35,7 @@ export default function Built() {
         </div>
         {Jobs.map((e, index) => {
           return (
-            <div className={Style.card} key={"text" + index}>
+            <div className={Style.card} id="card" key={"text" + index}>
               <div className={Style.card__image}>
                 <Image src="/images/1.jpeg" layout="fill" alt="img"></Image>
 
@@ -63,6 +63,21 @@ export default function Built() {
           );
         })}
       </div>
+      <style jsx>{`
+                  h6,h5{
+                    color:${thema != undefined ? thema.textColor != undefined ? thema.textColor.other : "#fff" : "#fff"};  
+                  }
+                 a, span , p{
+                      color: ${thema != undefined ? thema.textColor != undefined ? thema.textColor.primary : "#64FFDA" : "#64FFDA"};
+                  }
+
+                  #card{
+                    background-color: ${thema != undefined ? thema.backgroundColor != undefined ? thema.backgroundColor.hover : '#0f5e4b' : '#0f5e4b'};
+                   box-shadow-color: color:${thema != undefined ? thema.textColor != undefined ? thema.textColor.other : "#fff" : "#fff"}; 
+                    }
+                  `}
+              </style>
+
     </>
   );
 }

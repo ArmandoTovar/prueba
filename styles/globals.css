@@ -84,4 +84,7 @@ button{
   color: #64FFDA;
 
 }
-
+button:hover{
+  color: #0f5e4b;
+  border-color:#0f5e4b;
+}

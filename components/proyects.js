@@ -81,7 +81,7 @@ const Jobs = [
 console.log(Jobs);
 
 
-export default function Proyects() {
+export default function Proyects({ thema }) {
     const [value ,setvalue] =useState(3)
 
   return (
@@ -92,7 +92,7 @@ export default function Proyects() {
         {Jobs.map((e, index) => {
           if (index < value) {
             return (
-              <div className={Style.proy} key={"text" + index}>
+              <div className={Style.proy} id="card" key={"text" + index}>
                 <div>
                   <FaFolder />
                   <Link href={e.link} passHref={true}>
@@ -118,6 +118,20 @@ export default function Proyects() {
 
       )}
       :
+      <style jsx>{`
+                  h6,h5{
+                    color:${thema != undefined ? thema.textColor != undefined ? thema.textColor.other : "#fff" : "#fff"};  
+                  }
+                  div > div:nth-child(1),a , span , p{
+                      color: ${thema != undefined ? thema.textColor != undefined ? thema.textColor.primary : "#64FFDA" : "#64FFDA"};
+                  }
+
+                  #card{
+                    background-color: ${thema != undefined ? thema.backgroundColor != undefined ? thema.backgroundColor.hover : '#0f5e4b' : '#0f5e4b'};
+                   box-shadow-color: color:${thema != undefined ? thema.textColor != undefined ? thema.textColor.other : "#fff" : "#fff"}; 
+                    }
+                  `}
+              </style>
     </>
   );
 }

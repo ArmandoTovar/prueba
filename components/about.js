@@ -1,12 +1,12 @@
 import Image from "next/image";
 import StyleAbout from "./about.module.css";
 import "animate.css";
-export default function About() {
+export default function About({ thema }) {
   return (
     <div className={StyleAbout.about}>
       <div className={StyleAbout.title}>
         <h6 className={StyleAbout.section}>About me</h6>
-        <div className={StyleAbout.separator}></div>
+        <div className={StyleAbout.separator} id="separator"></div>
       </div>
       <div className={StyleAbout.abouts}>
         <p className={StyleAbout.parraf}>Fast-forward to today, and I’ve had the privilege of working at an advertising agency, a start-up, a huge corporation, and a student-led design studio. My main focus these days is building accessible, inclusive products and digital experiences at Upstatement for a variety of clients.</p>
@@ -68,6 +68,26 @@ export default function About() {
           alt="logo"
         />
       </div>
+
+      <style jsx>{`
+                  h6{
+                    color:${thema != undefined ? thema.textColor != undefined ? thema.textColor.other : "#fff" : "#fff"};  
+                  }
+                 span{
+                      color: ${thema != undefined ? thema.textColor != undefined ? thema.textColor.primary : "#64FFDA" : "#64FFDA"};
+                  }
+                 p{
+                      color:${thema != undefined ? thema.textColor != undefined ? thema.textColor.parag : "#000" : "#000"};
+                    }
+                #separator {
+                      border-color: ${thema != undefined ? thema.textColor != undefined ? thema.textColor.primary : "#64FFDA" : "#64FFDA"};
+                    }
+                  div::before {
+                      border-color:${thema != undefined ? thema.textColor != undefined ? thema.textColor.primary : "#64FFDA" : "#64FFDA"}; 
+                    }
+                    
+                  `}
+              </style>
     </div>
   );
 }
