@@ -20,7 +20,15 @@ align-self:baseline;
    padding: .5rem; 
 }
 .social{
+  position: absolute;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  left: 10px;
+  ;
+  width: auto;
+
+}
+.social > a {
+  color: var(--secundary_text);
+  font-size: 1.5em;
 }
