@@ -7,12 +7,9 @@ import Built from '../components/built'
 import Proyects from '../components/proyects'
 
 import React, { useState, useEffect } from 'react';
-import globalStyles from '../hooks/global.js';
 import { useTheme } from '../hooks/theme';
-
 import * as themes from '../pages/api/varTheme.json';
 import { setToLS } from '../utils/storage';
-import { FaDharmachakra } from "react-icons/fa";
 
 export default function Home(props) {
   setToLS('all-themes', themes.default);
@@ -29,7 +26,7 @@ export default function Home(props) {
       <Head>
         <title>At design</title>
       </Head>
-      <button onClick={() => {
+      <button type='checkbox' onChange={() => {
         selectedTheme.id == 'T_002' ? setMode('dark') : setMode('light')
       }}>Theme</button>
       <Navbar />

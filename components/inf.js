@@ -24,6 +24,7 @@ export default function Inf() {
         <Link href="https://www.google.com" passHref={true}><a><FaInstagram /></a></Link>
         <Link href="https://www.google.com" passHref={true}><a><FaLinkedin /></a></Link>
         <Link href="https://www.google.com" passHref={true}><a><FaGithub /></a></Link>
+        <div></div>
       </div>
     </div>
 
