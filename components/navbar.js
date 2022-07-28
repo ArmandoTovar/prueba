@@ -1,6 +1,9 @@
 import Link from "next/link";
 import Style from "./style_component/navbar.module.css";
-export default function navbar() {
+import Toggle from "./elements/toggle";
+import useTranslation from 'next-translate/useTranslation';
+export default function navbar(props) {
+  const { t } = useTranslation('common');
   return (
     <nav className={Style.nav_container}>
 <div className={Style.logo}>
@@ -29,29 +32,35 @@ export default function navbar() {
       </label>
       <ul className={Style.nav_menu}>
         <li>
-          <Link href="#clinicas">
-            <a className={Style.nav__item}>About</a>
+          <Link href="#about">
+            <a className={Style.nav__item}>{t('About')}</a>
           </Link>
         </li>
         <li>
-          <Link href="#servicios">
-            <a className={Style.nav__item}>Experience</a>
-          </Link>
-        </li>
-        <li>
-          {" "}
-          <Link href="#informacion">
-            <a className={Style.nav__item}>Work</a>
-          </Link>
-        </li>
-        <li>
-          <Link href="#contactos">
-            <a className={Style.nav__item}>Contact</a>
+          <Link href="#experience">
+            <a className={Style.nav__item}>{t('Experience')}</a>
           </Link>
         </li>
         <li>
           {" "}
-          <button className={Style.resume}>Resume</button>
+          <Link href="#work">
+           
+            <a className={Style.nav__item}>{t('Work')}</a>
+          </Link>
+        </li>
+        <li>
+          <Link href="#contact">
+            <a className={Style.nav__item}>{t('Contact')}</a>
+          </Link>
+        </li>
+     
+        <li>
+          {" "}
+          <button onClick={()=>{location.replace('/cv.pdf')}} className={Style.resume}>{t('Resume')}</button>
+        </li>
+        <li>
+
+        <Toggle selectedTheme={props.selectedTheme} setMode={props.setMode}/>
         </li>
       </ul>
     </nav>

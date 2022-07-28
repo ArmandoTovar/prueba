@@ -3,35 +3,37 @@ import Image from 'next/image'
 import Style from './style_component/built.module.css'
 import { FaGithubSquare, FaExternalLinkAlt } from 'react-icons/fa'
 
+import useTranslation from 'next-translate/useTranslation';
 
+ 
 export default function Built () {
-
+ const { t } = useTranslation('common');
   const Jobs = [
     {
-      image: '/images/1.jpeg',
+      image: '/images/simulador.png',
       type: 'Featured Project',
-      title: 'TeamCity CICD for maven Runners',
-      desc: 'A minimal, dark blue theme for VS Code, Sublime Text, Atom, iTerm, and more. Available on Visual Studio Marketplace, Package Control, Atom Package Manager, and npm.'
+      title: '3D substation simulator for training',
+      desc: 'A virtual environment developed'
+    },
+    {
+      image: '/images/anunciador.png',
+      type: 'Featured Project',
+      title: 'Alarm System',
+      desc: 'Desktop application programmed'
     },
     {
       image: '/images/1.jpeg',
       type: 'Featured Project',
-      title: 'TeamCity CICD for maven Runners',
-      desc: 'A minimal, dark blue theme for VS Code, Sublime Text, Atom, iTerm, and more. Available on Visual Studio Marketplace, Package Control, Atom Package Manager, and npm.'
-    },
-    {
-      image: '/images/1.jpeg',
-      type: 'Featured Project',
-      title: 'TeamCity CICD for maven Runners',
-      desc: 'A minimal, dark blue theme for VS Code, Sublime Text, Atom, iTerm, and more. Available on Visual Studio Marketplace, Package Control, Atom Package Manager, and npm.'
+      title: 'Captain Matthew',
+      desc: 'ecommerce for a seafood'
     }
   ]
 
   return (
     
-      <div className={Style.built}>
+      <div className={Style.built} id="work">
         <div className={Style.separator}>
-          <h4>Some Things I’ve built</h4>
+          <h4>{t('Some Things Ive built')}</h4>
         </div>
         {Jobs.map((e, index) => {
           return (
@@ -39,21 +41,21 @@ export default function Built () {
             <div className={Style.card} key={'text' + index}>
 
               <div className={Style.card__image}>
-                <Image src="/images/1.jpeg" layout="fill" loading="lazy" alt="img"></Image>
+                <Image src={e.image}layout="fill" loading="lazy" alt="img"></Image>
 
               </div>
               <div className={Style.card__content}>
 
-              <h3>{e.type}</h3>
-              <h4>{e.title}</h4>
-              <p>{e.desc}</p>
+              <h3>{t(e.type)}</h3>
+              <h4>{t(e.title)}</h4>
+              <p>{t(e.desc)}</p>
               <div className={Style.links_card}>
-                <Link href="https://stackoverflow.com/" passHref={true}>
+                <Link href="https://github.com/ArmandoTovar/" passHref={true}>
                   <a>
                     <FaGithubSquare />
                   </a>
                 </Link>
-                <Link href="https://google.com/" passHref={true}>
+                <Link href="https://youtu.be/DkVbTL1YIj4" passHref={true}>
                   <a>
                     <FaExternalLinkAlt />
                   </a>

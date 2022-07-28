@@ -4,6 +4,7 @@
   max-width: 800px;
   flex-wrap: wrap;
   padding: 2.2em;
+
 }
 
 .worked {
@@ -11,7 +12,11 @@
   flex-wrap: wrap;
  margin-top: 20px;
   gap: 20px;
- justify-content: center;
+ justify-content: space-around;
+ transition-property: all;
+ transition-duration: 2000ms;
+ transition-timing-function: ease;
+
 }
 
 .title {
@@ -35,7 +40,7 @@
  
   border: none;
   overflow-x: hidden;
-  overflow-y: scroll;
+  overflow-y: auto;
   max-height: 200px;
   flex: 0 1 300px;
   margin-right: 20px;
@@ -43,13 +48,18 @@
 .employ {
   max-width: 600px;
   flex: 0 0 300px;
+  transition: max-height 0.5s;
+  height: auto;
+
+
 }
 
-.bar > input[type="radio"] {
+
+.bar >div > input[type="radio"] {
   display: none;
 }
 
-.bar > label {
+.bar >div > label {
   display: block;
   font-family: "Poppins";
   font-style: normal;
@@ -58,7 +68,7 @@
   user-select: none;
 }
 
-.bar > label::before {
+.bar >div > label::before {
   width: auto;
   content: "";
   border-left: 5px solid var(--primary_text);
@@ -69,14 +79,14 @@
   position: relative;
   left: -3px;
 }
-.bar > input[type="radio"]:checked + label {
+.bar >div > input[type="radio"]:checked + label {
   display: block;
 
   height: 1;
   transition: 0.5s;
   background: rgba(100, 255, 218, 0.2);
 }
-.bar > input[type="radio"]:checked + label::before {
+.bar >div > input[type="radio"]:checked + label::before {
   content: "";
   transition: 0.5s;
   font-weight: 100;
@@ -96,6 +106,7 @@
   border-color: transparent transparent transparent var(--primary_text);
   position: absolute;
   margin: 9px -20px;
+
 }
 .employ > span {
   color: var(--other_text);

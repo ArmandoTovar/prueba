@@ -1,43 +1,48 @@
 {
+    
+
+
+
     "datos": [
-       {
-            "name": "Weza Prosoft  sdfsdfsdfsdf",
-            "cargo": "Software Engineer @WezaProsoft",
-            "fecha": "Jan 2020 - Present",
-            "act": [
-                "Write modern, performant, maintainable code for a diverse array of client and internal projects",
-                "Write modern, performant, maintainable code for a diverse array of client and internal projects",
-                "Write modern, performant, maintainable code for a diverse array of client and internal projects"
-            ]
-        }, {
-            "name": "Weza Prosoft  sdfsdfsdfsdf",
-            "cargo": "Software Engineer @WezaProsoft",
-            "fecha": "Jan 2020 - Present",
-            "act": [
-                "Write modern, performant, maintainable code for a diverse array of client and internal projects",
-                "Write modern, performant, maintainable code for a diverse array of client and internal projects",
-                "Write modern, performant, maintainable code for a diverse array of client and internal projects"
-            ]
-        },
+       
         {
-            "name": "Weza Prosoft Ltd",
-            "cargo": "Software Engineer @WezaProsoft",
-            "fecha": "Jan 2021 - Present",
-            "act": [
-                "Write performant, performant, maintainable code for a diverse array of client and internal projects",
-                "Write performant, performant, maintainable code for a diverse array of client and internal projects",
-                "Write performant, performant, maintainable code for a diverse array of client and internal projects"
-            ]
-        },
-        {
-            "name": "Weza Prosoft Ltd",
-            "cargo": "Software Engineer @WezaProsoft",
-            "fecha": "Jan 2022 - Present",
-            "act": [
-                "Write Write, performant, maintainable code for a diverse array of client and internal projects",
-                "Write Write, performant, maintainable code for a diverse array of client and internal projects",
-                "Write Write, performant, maintainable code for a diverse array of client and internal projects"
-            ]
-        }
+            "name": "Corpoelec",
+            "cargo": "Ingeniero de Sistemas, Automatizaci\u00F3n y Control",
+            "fecha": "ene 2019 - mar 2020",
+            "act": ["Configuraci\u00F3n, mantenimiento e inspecci\u00F3n de Sistema de monitoreo y control de subestaciones el\u00E9ctricas."]
+      
+          },
+          {
+           
+            "name": "Turagual C.A",
+            "cargo": "Ingeniero Electricista",
+            "fecha": "ago 2019 - ago 2019",
+            "act": ["Pruebas funcionales a tableros de Protecciones de sistemas el\u00E9ctricos."," Instalaci\u00F3n de equipos de monitoreo y control para la migraci\u00F3n tecnol\u00F3gica transitoria."]
+      
+          },
+          {
+          
+            "name": "Cateca C.A",
+            "cargo": "Ingeniero Electricista",
+            "fecha": "mar 2020 - ene 2021",
+            "act": ["Instalaci\u00F3n y configuraci\u00F3n de equipos de monitoreo y control en subestaciones."," Ingenier\u00EDa de detalles en reconectares 24kV."," Reestructuraci\u00F3n del cableado de paneles de protecci\u00F3n, control y monitoreo de subestaciones el\u00E9ctricas."]
+      
+          },
+          {
+            
+            "name": "Coinsertelca",
+            "cargo": "Ingeniero de Sistemas",
+            "fecha": "mar 2021 - ene 2022",
+            "act":[ "Restauraci\u00F3n y Restructuraci\u00F3n del sistema de supervisi\u00F3n y control asociados a Draga de succi\u00F3n con cortador tipo 2000(INDER 9 e INDER 12)"]
+          },
+          {
+     
+            "name": "Corpoelec",
+            "cargo": "Supervisor, Automatizacion y Control",
+            "fecha": "ene 2021 - ene 2022",
+            "act": ["Coordinaci\u00F3n de trabajos en relaci\u00F3n a la implementaci\u00F3n, optimizaci\u00F3n y mantenimientos de los sistemas de monitores, control y adquisici\u00F3n de datos de las subestaciones el\u00E9ctricas"]
+      
+          }
     ]
 }
+

@@ -11,6 +11,7 @@ background-color: var(--backgroun-card);
 box-shadow: 2px 2px 2px 1px var(--other_text);
 padding: 20px  10px 20px 10px;
 display: flex;
+
 max-width: 800px;
 margin: 20px 0px;
 }
@@ -25,8 +26,11 @@ border-bottom-left-radius:30px ;
 }
 .card__image{
     position: relative;
+    margin:20px 0;
     width:50%;
-   max-height: 247px;
+   max-height: 200px;
+   
+   
      
 }
 .card__content{

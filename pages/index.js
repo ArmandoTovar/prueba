@@ -12,50 +12,41 @@ import { useTheme } from '../hooks/theme';
 import * as themes from '../pages/api/varTheme.json';
 import { setToLS } from '../utils/storage';
 import Contact from '../components/contact'
+import Style from '../components/style'
+import PopUp from '../components/elements/popUp'
+import DropdownLanguage from '../components/elements/dropdownLanguage'
 
-export default function Home(props) {
+export default function Home() {
   setToLS('all-themes', themes.default);
-  const { theme, themeLoaded, setMode } = useTheme();
+  const { theme, setMode } = useTheme();
   const [selectedTheme, setSelectedTheme] = useState(theme);
 
   useEffect(() => {
     setSelectedTheme(theme);
-
   }, [theme]);
+
 
   return (
     <>
       <Head>
         <title>At design</title>
       </Head>
-      <button type='checkbox' onChange={() => {
-        selectedTheme.id == 'T_002' ? setMode('dark') : setMode('light')
-      }}>Theme</button>
-      <Navbar />
-      <main  >
+  
+      <DropdownLanguage/>
+      
+      <Navbar setMode={setMode}  selectedTheme={selectedTheme} />
+      <main>
         <Inf />
         <About />
         <Worked />
         <Built />
-        <Proyects />
-        <Contact/>
-        <Footer/>
+   
+        <Contact />
 
+        <Footer />
+        <PopUp />
       </main>
-      <style jsx global>
-          {`
-:root{
-  --background:${theme != undefined ? theme.backgroundColor.primary : 'white'};
-  --primary_text:${theme != undefined ? theme.textColor.primary : 'white'};
-  --secondary_text:${theme != undefined ? theme.textColor.secundary : 'white'};
-  --other_text:${theme != undefined ? theme.textColor.other : 'white'};
-  --backgroun-card:${theme != undefined ? theme.backgroundColor.secundary : 'white'};
-  --font:${theme != undefined ? theme.font : 'Arial'};
-  --secondary_font:${theme != undefined ? theme.font : 'Inter'};
-  --bacground-card-secondary:${theme != undefined ? theme.backgroundColor.hover : 'white'};
-  }
-`}
-        </style>
+      <Style theme={theme} />
     </>
   )
 }

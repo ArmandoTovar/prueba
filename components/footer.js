@@ -3,7 +3,7 @@ import footer from './style_component/footer.module.css'
 export default function Footer () {
   return (
         <Link href={'#'} >
-            <a className={footer.container}>Designed & Built by Stephen Gachoka</a>
+            <a className={footer.container}>Desarrollado por AT (2022)</a>
         </Link>
 
   )
